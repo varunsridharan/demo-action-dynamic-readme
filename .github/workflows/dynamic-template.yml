@@ -1,0 +1,57 @@
+name: Dynamic Template
+
+on:
+  push:
+    paths:
+      - templates/**
+      - .github/markdown-templates/**
+      - .github/scripts/**
+      - README.md
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update_templates:
+    name: "Update Templates"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "📥  Fetching Repository Contents"
+        uses: actions/checkout@main
+
+      - name: "💾  Github Repository Metadata"
+        uses: varunsridharan/action-repository-meta@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Setup PHP with pecl extension"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
+      - name: "Regenerate Templates Files"
+        run: php .github/scripts/create-markdown.php
+
+      - name: "Updated Generated Template"
+        run: |
+          git config --global user.email "githubactionbot@gmail.com"
+          git config --global user.name "Github Action Bot"
+          git add -f ./templates/**
+          if [ "$(git status --porcelain)" != "" ]; then
+            git commit -m "Template Files Regenerated"
+            git push "https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "💫  Dynamic Template Render"
+        uses: varunsridharan/action-dynamic-readme@master
+        with:
+          global_template_repository: varunsridharan/varunsridharan
+          files: |
+            README.md
+            templates/variables/defaults.md=output/variables/defaults.md
+            templates/file-includes/inline.md=output/file-includes/inline.md
+            templates/file-includes/reusable-includes.md=output/file-includes/reusable-includes.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
