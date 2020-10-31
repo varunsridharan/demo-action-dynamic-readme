@@ -8,9 +8,9 @@ All Raw Source Code are located inside [templates/](templates/) Folder
 All Compiled code are located inside [output/](output/) Folder.
 
 
-# Please Visit [Dynamic Readme](https://github.com/varunsridharan/action-dynamic-readme/) for More information on how to use this action
+## Please Visit [Dynamic Readme](https://github.com/varunsridharan/action-dynamic-readme/) for More information on how to use this action
  
---
+---
 
 <!-- START readme-templates/license-and-conduct.mustache -->
 <!-- END readme-templates/license-and-conduct.mustache -->
