@@ -106,8 +106,8 @@
 	  },
 	  "Include File Inside Codeblock"                  : {
 		"description" : "dynamic-template.yml github action yaml file which in in this repository will be included below",
-		"usage"       : "```yaml\n<\\!-- include templates/file-includes/parts/feedback.md -->\n```",
-		"output"      : "```yaml\n<!-- include .github/workflows/dynamic-template.yml -->\n```"
+		"usage"       : "<\\!-- include [code:yml] .github/workflows/dynamic-template.yml -->",
+		"output"      : "<!-- include [code:yml] .github/workflows/dynamic-template.yml -->"
 	  },
 	  "Including File From A Remote Repository"        : {
 		"description" : "You can include any type of file from any repository. if you want to include from a **Private** Repository then you have to provide **Github Personal Access Token** Instead **Github Token** in action's workflow file",
