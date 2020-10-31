@@ -45,7 +45,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "💫  Dynamic Template Render"
-        uses: varunsridharan/action-dynamic-readme@master
+        uses: varunsridharan/action-dynamic-readme@main
         with:
           global_template_repository: varunsridharan/varunsridharan
           files: |
