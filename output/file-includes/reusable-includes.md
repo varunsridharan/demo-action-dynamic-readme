@@ -134,9 +134,8 @@ jobs:
             templates/file-includes/reusable-includes.md=output/file-includes/reusable-includes.md
         env:
           GITHUB_TOKEN: 
-```
 
-<!-- END [code:yml] .github/workflows/dynamic-template.yml -->
+```<!-- END [code:yml] .github/workflows/dynamic-template.yml -->
 
 </details>
 
@@ -181,7 +180,6 @@ Creating a *fork* is producing a personal copy of someone else's project. Forks 
 After forking this repository, you can make some changes to the project, and submit [a Pull Request](https://github.com/octocat/Spoon-Knife/pulls) as practice.
 
 For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
-
 <!-- END octocat/Spoon-Knife@master/README.md -->
 </pre>
 
@@ -239,7 +237,6 @@ If you, or your company, use any of my projects or like what I’m doing, kindly
 [telegram]: https://sva.onl/telegram/
 [email]: https://sva.onl/email
 [website]: https://sva.onl/website/
-
 <!-- END sponsor.md -->
 </pre>
 
