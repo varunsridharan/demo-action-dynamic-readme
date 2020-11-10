@@ -29,7 +29,7 @@ Include a file from the current file's location
 <pre>
 <!-- START ./parts/license.md -->
 ## 📜  License & Conduct
-- [**The Unlicense**](https://github.com/varunsridharan/demo-dynamic-readme/blob/main/LICENSE) © [Varun Sridharan](website)
+- [**The Unlicense**](https://github.com/varunsridharan/demo-action-dynamic-readme/blob/main/LICENSE) © [Varun Sridharan](website)
 - [Code of Conduct](https://github.com/varunsridharan/.github/blob/master/CODE_OF_CONDUCT.md)
 <!-- END ./parts/license.md -->
 </pre>
@@ -55,7 +55,7 @@ Include a file located inside this repository
 <!-- START templates/file-includes/parts/feedback.md -->
 ## 📣 Feedback
 - ⭐ This repository if this project helped you! :wink:
-- Create An [🔧 Issue](https://github.com/varunsridharan/demo-dynamic-readme/issues/) if you need help / found a bug
+- Create An [🔧 Issue](https://github.com/varunsridharan/demo-action-dynamic-readme/issues/) if you need help / found a bug
 <!-- END templates/file-includes/parts/feedback.md -->
 </pre>
 
